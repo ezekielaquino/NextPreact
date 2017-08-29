@@ -87,11 +87,13 @@ class Header extends Component {
 
     /**
      * A note on styles:
-     * We're going for style jsx here, which next comes with.
-      IMO really should be the way w/ modular/component route
-      Also, define classes when needed to toggle between states
-      Consider the use of "base classes". Is it really needed?
-      Styles are scoped to this component alone
+     * We're going for style jsx here, next ships with it.
+      IMO css in js is the way to go when going the component/
+      modular route. Otherwise I feel like the whole concept
+      doesn't make any sense. Also, no need to add a class on
+      each element, we can just rely on semantics here unless
+      absolutely needed (e.g. multiple elements of type), scope
+      of styles is isolated to the component!
      */
   }
 }
