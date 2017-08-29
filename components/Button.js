@@ -23,7 +23,7 @@ class Button extends Component {
   }
 
   render() {
-    const {size, type, text, icon, iconColor} = this.props;
+    const {size, type, text, icon, iconColor, style, onClick} = this.props;
     const Element = type === 'button' ? `button` : `div`;
     const elementClasses = classNames(type, size, {
       'icon': icon
@@ -31,7 +31,9 @@ class Button extends Component {
 
     return (
       <Element
-        className={elementClasses}>
+        className={elementClasses}
+        onClick={onClick}
+        style={style}>
 
         { icon ? (
           <Icon
@@ -53,6 +55,8 @@ class Button extends Component {
             padding: 1rem 1.5rem;
             background: blue;
             color: white;
+            outline: none;
+            cursor: pointer;
           }
           .link {
             display: inline-block;

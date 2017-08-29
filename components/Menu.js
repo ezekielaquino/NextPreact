@@ -1,6 +1,7 @@
 import {Component} from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
+import Button from '../components/Button';
 
 class Menu extends Component {
   constructor(props) {
@@ -25,10 +26,14 @@ class Menu extends Component {
     return (
       <div
         className={this.state.isOpen ? 'is-open' : ''}>
-        <button
-          onClick={this.handleClick}>
-            {this.state.isOpen ? 'Close' : 'Menu'}
-        </button>
+        <Button
+          text={this.state.isOpen ? 'Close' : 'Menu'}
+          size="small"
+          onClick={this.handleClick}
+          style={{
+            position: 'relative',
+            zIndex: 999
+          }}/>
 
         <nav>
           {/* We can probably just map this... */}
@@ -47,10 +52,6 @@ class Menu extends Component {
 
 
         <style jsx>{`
-          button {
-            position: relative;
-            z-index: 9999;
-          }
           nav {
             width: 70vw;
             padding: 2rem;
