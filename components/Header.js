@@ -39,23 +39,10 @@ class Header extends Component {
   render() {
     // Let's destructure the props
     const {variant, title} = this.props;
-    const variants = {
-      dark: {
-        backgroundColor: '#000',
-        color: '#FFF'
-      },
-      light: {
-        backgroundColor: '#cdcdcd',
-        color: '#000'
-      }
-    }
 
     return (
       <header
-        style={{
-          backgroundColor: variants[variant].backgroundColor,
-          color: variants[variant].color
-        }}>
+        className={variant}>
 
         <h1>
           {/*
@@ -80,6 +67,14 @@ class Header extends Component {
             display: flex;
             justify-content: space-between;
             position: relative;
+          }
+          .dark {
+            background-color: #000;
+            color: #FFF;
+          }
+          .light {
+            background-color: #CDCDCD;
+            color: #000;
           }
         `}</style>
       </header>

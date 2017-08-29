@@ -8,7 +8,8 @@ import Button from '../components/Button';
 const AboutPage = () => (
   <PageWrapper>
     <Header
-      title="About" />
+      title="About"
+      variant="dark"/>
 
     <Section>
       <Title
