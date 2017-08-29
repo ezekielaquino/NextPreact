@@ -2,11 +2,11 @@
 
 # NextPreact
 
-NextPreact is my personal flavour starter kit for making stuff with Preact via Next.js. I intend this starter kit to be (more than anything) some sort of a styleguide in addition to just getting rid of all the cruft that gets in the way of getting started and making something. It's also great practice!
+NextPreact is my personal flavour starter kit for making stuff with Preact via Next.js. I intend this starter kit to be (more than anything) some sort of a styleguide/suggestive pattern in addition to just getting rid of all the cruft that gets in the way of getting started and making something. It's also great practice!
 
 **This is still a WIP, but you can already take a peek or choose to use it if you like. Excuse the badly written comments that might at some points dont really mean anything, they're more like suggestions for me. This repo is a working "template", always changing as i move along**
 
-ReadMe coming soon! I love how smooth Next is, and with `next export` (which you can just deploy, even without a server, even on Github pages!!!) I think it's a great and valid option to build static sites as well.
+Proper Readme coming soon! Also note, it looks very brutalist at the moment, but the design is not the point.
 
 Coming soon: export directions and custom scripts to deploy straight to github pages
 
@@ -35,10 +35,11 @@ OR you can export it. It'll build all your source files so you can just deploy i
 ```
 npm run export
 ```
-Resulting to an `/out` folder with #everything.
+Resulting to an `/out` folder with #everything. you can deploy this anywhere even without node. To deploy on Github, it must live on a user or organisation page (these types allow for .nojekyll). Simply create an empty `.nojekyll` file in `/out` and push its contents to master. [Link](https://github.com/zeit/next.js/wiki/Deploying-a-Next.js-app-into-GitHub-Pages)
 
 5. Enjoy and profit
 
-## This is forked from Next.js!
+## This is based on an example via Next.js
+[Example](https://github.com/zeit/next.js/tree/master/examples/using-preact)
 This is my personal starter kit, which I will be building and improving as I go along.
 This example uses [Preact](https://github.com/developit/preact) instead of React. It's a React like UI framework which fast and small. Here we've customized Next.js to use Preact instead of React.
