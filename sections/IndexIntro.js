@@ -20,6 +20,7 @@ class IndexIntro extends Component {
           text="Default title"/>
 
         <Link href="/about">
+          {/* This is valid HTML5, anchors can wrap almost anything */}
           <a>
             <Button
               text="Go to about"

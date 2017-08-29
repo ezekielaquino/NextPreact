@@ -29,6 +29,9 @@ class Header extends Component {
     variant: PropTypes.string
   }
 
+  // Just an example how a child component can return some value
+  // to its parent component (state, elem ref, etc). Here the menuState
+  // form the menu component is set as the header state when it changes
   handleMenuChange(menuState) {
     this.setState({ menuIsOpen: menuState });
   }

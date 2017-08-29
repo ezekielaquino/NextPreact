@@ -4,7 +4,7 @@
 
 NextPreact is my personal flavour starter kit for making stuff with Preact via Next.js. I intend this starter kit to be (more than anything) some sort of a styleguide in addition to just getting rid of all the cruft that gets in the way of getting started and making something. It's also great practice!
 
-**This is still a WIP, but you can already take a peek or choose to use it if you like. Excuse the badly written comments that might at some points dont really mean anything, they're more like suggestions for me. This repo is a working "template", always changing template as i move along**
+**This is still a WIP, but you can already take a peek or choose to use it if you like. Excuse the badly written comments that might at some points dont really mean anything, they're more like suggestions for me. This repo is a working "template", always changing as i move along**
 
 ReadMe coming soon! I love how smooth Next is, and with `next export` (which you can just deploy, even without a server, even on Github pages!!!) I think it's a great and valid option to build static sites as well.
 
