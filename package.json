@@ -1,0 +1,22 @@
+{
+  "name": "nextpreact",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "module-alias": "^2.0.0",
+    "next": "latest",
+    "preact": "^7.2.0",
+    "preact-compat": "^3.14.0"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "react": "~15.6.1",
+    "react-dom": "~15.6.1"
+  }
+}
